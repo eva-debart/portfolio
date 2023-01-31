@@ -1,0 +1,293 @@
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+.visu{
+    text-align: center;
+    padding-top: 130px;
+}
+
+/*nav*/
+header{
+    
+    color:white;
+    font-family: 'Merienda', cursive;
+}
+
+.nav ul{
+    display:flex;
+    justify-content:flex-end;
+	list-style: none;
+	padding:10px;
+    margin:0;
+    
+}
+.nav li{
+    font-family: 'Merienda', cursive;
+    margin:0 10px;
+}
+a{
+    text-decoration:none;
+	font-size:1.5rem;
+	text-transform:uppercase;
+	padding:10px 20px;
+	margin:0 10px;
+    border-radius: 1rem;
+}
+
+.nav a:hover {
+  color:white;
+  background-color:#87B83D;
+}
+
+.current {
+    background-color:#87B83D;
+}
+
+.accueil{
+    background-color: #A1CA62;
+    height: 515px;
+}
+
+/*******profil******/
+main{
+    max-width:1500px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.main{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1500px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.section{
+    width:800px;
+    height:200px;
+    margin:40px auto;
+    background-color:grey;
+    border:2px black;
+    border-radius:25%;
+    text-align:center;
+    
+}
+
+
+
+.login {
+  display: flex;
+}
+.infoProduct {
+  display: none;
+  padding-top: 110px;
+}
+.favories {
+  display: none;
+  padding-top: 110px;
+}
+.portfeuil {
+  display: none;
+  padding-top: 110px;
+}
+
+.profil-table, th, td {
+    border: 1px solid;
+  }
+/*****accceuil****/
+.presentation{
+    background-color: #47AF79;
+    height: 500px;
+    display:flex;
+}
+.photo{
+    max-height:75%;
+    border-radius: 100%;
+    padding:20px;
+}
+.text-pres{
+    padding-top:  100px;
+    max-width:50%;
+    color:rgb(255, 255, 255);
+}
+/*****presentation*****/
+.skill{
+    height: 700px;
+    background-color: #E7F1F8;
+}
+/***skill***/
+.galerie{
+    background-color:#008E84;
+    min-height: 400px;
+    
+}
+/********galerie*************/
+#myBtnContainer{
+    margin:10px
+} 
+.comment{
+    background-color:#146A78;
+    height: 767px;
+}
+.contact{
+    background-color:#2F4856;
+    max-height: 801px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input[type=text], select, textarea, input[type=email]{
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+}
+
+label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+}
+
+.col-25 {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+
+.col-75 {
+float: left;
+width: 74%;
+margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/***********button***********/
+.btn{
+    border-radius:  1rem;
+    padding:10px 20px;
+    margin: auto 20px;
+    font-weight:bold;
+    text-decoration:none;
+    border:none;
+    background-color: #00524c;
+    color:#ccc;
+}
+.btn:hover{
+    background-color: #4FAF97;
+}
+.btn:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+}
+.active{
+    background-color: #4FAF97; 
+    color:black;
+}
+.boutton-acceuil{
+    background-color:#FFDB58;
+}
+.button{
+    border-radius:  1rem;
+    padding:10px 20px;
+    margin: auto 20px;
+    font-weight:bold;
+    text-decoration:none;
+    border:none;
+    background-color:#FFDB58;
+    color: rgb(255, 255, 255);
+}
+
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    background-color:#e8b13c;
+  }
+.button:hover {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    background-color:#e8b13c;
+  }
+  .butt-contact{
+    background-color: #486E84;
+}
+/******* comment *******/
+.comment-body{
+    max-width: 31%;
+    max-height:30%;
+    border:none;
+    border-radius:  1rem;
+    padding:10px 20px;
+    margin: 20px;
+    background-color: #E7F1F8;
+    width:31%;
+    display:flex;
+    flex-wrap:wrap;
+    list-style: none; 
+}
+.comment-body > li{
+    width:30%;
+   
+}
+.comment-body > .textarea{
+    width:70%;
+}
+.comment-body > li > img{
+    border:none;
+    border-radius: 50px;
+    max-height: 90px;
+    margin:50% auto;
+}
+.title{
+    color:#e8b13c;
+    text-transform: capitalize;
+    font-size:2rem;
+}
+@media screen and (min-width:980px){
+    /*destop*/
+    .container{
+        max-width:100%;
+    }
+     .img > div {
+        width: 32%;
+        margin: 50px 0;
+    }
+    .mix:hover {
+        transform: scale(1.2);
+    }
+    
+    .mix:hover p {
+        opacity: 1;
+        
+    }
+    
+}
+
+
+@media screen and ( min-width:780px ) and (max-width:980px) {
+    /*tablette*/
+    .container{
+        max-width:100%;
+    }
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    
+    
+}

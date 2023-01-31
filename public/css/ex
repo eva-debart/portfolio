@@ -1,0 +1,68 @@
+
+.content {
+    position: relative;
+    transition: all .4s ease;
+}
+
+.content span img{
+        
+    margin:50px auto;
+    width:15%;
+    box-shadow:none;
+}
+.content p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,.4);
+    padding: 60px;
+    display: flex;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.content span {
+    display: block;
+    border: 6px solid #fff;
+    width: 100%;
+    text-align:center;
+    color:white;
+    font-family: 'Merienda', cursive;
+    font-size:3rem;
+    text-transform: capitalize;
+    
+}
+
+@media screen and (min-width:980px){
+  /*destop*/
+  .container{
+      max-width:100%;
+  }
+   .img > div {
+      width: 32%;
+      margin: 50px 0;
+  }
+  .content:hover {
+      transform: scale(1.2);
+  }
+  
+  .content:hover p {
+      opacity: 1;
+      
+  }
+  
+}
+
+
+@media screen and ( min-width:780px ) and (max-width:980px) {
+  /*tablette*/
+  .container{
+      max-width:100%;
+  }
+}
+
+
+
