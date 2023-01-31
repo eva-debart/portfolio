@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma blibliotheque d'anime</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../public/assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../public/assets/owl-carousel/owl.theme.default.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    
+  
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="main">
+            <p><img src="../public/assets/img/logo-2.svg" alt="logo" class="logo">Ma blibliotheque Anime</p>
+            <nav class="nav">
+                <ul>
+                    <li><a href="accueil.html" >accueil</a> </li>
+                    <li><a href="Apropos.html">a propos</a></li>
+                    <li><a href="bibliotheque.html"class="current">Liste des Animes</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    
+        <article>
+        <h2>Owl Carousel</h2>
+        
+        <div class="owl-carousel">
+            <div><img src="img/hollywood1.jpg" alt="photo hollywood"> </div>
+        </div>
+        </article>
+        <section class="row">
+			<article class="col-2">
+				<div class="card" >
+					<div class="card-body">
+					    <img src="./img/large.jpg"class="card-img-top" alt="">
+						<h3 class="card-title">title</h3>
+						<p class="card-text">description</p>
+						<p class="card-text">categories</p>
+						<a type="button" class="btn btn-primary">en savoir plus</a>
+					</div>
+				</div>	
+			</article>
+			
+		</section>
+    </main>
+    <footer class="footer">
+    <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+    <p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../public/assets/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                dots: true
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

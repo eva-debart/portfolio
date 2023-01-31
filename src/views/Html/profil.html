@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ma blibliotheque d'anime</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../public/css/style.css">
+    
+    </head>
+    
+    <body>
+        <div class="container">
+        <header class="header">
+            <div class="main">
+                <p><img src="../public/assets/img/logo-2.svg" alt="logo" class="logo">Ma blibliotheque Anime</p>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="acceuil.html">accueil</a> </li>
+                        <li><a href="#"class="current">a propos</a></li>
+                        <li><a href="bibliotheque.html">Liste des Animes</a></li>
+                        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container-section">
+                <div class="container-login">
+                <nav class="nav-JS">
+                    <ul>
+                        <li><a id="profil" href="#">Profil</a></li>
+                        <li><a id="history" href="#">historique des commentaires</a></li>
+                        <li><a id="favories" href="#">Favories</a></li>
+                        <li><a id="modify" href="#">Ajouter Animes</a></li>
+                    </ul>
+                </nav>
+                
+                <section id="secLog" class="login">
+                    <div class="content">
+                        <div class="blockColor"></div>
+                            <div class="contentBx justify">
+                                <h3>Connexion</h3>
+                                <img src="profil"></img>
+                                <p>Nickname : <?= htmlspecialchars($user->getNickname()); ?> </p>
+                                <p>Age : <?= htmlspecialchars($user->getAge()); ?></p>
+                                <p>Email : <?= htmlspecialchars($user->getEmail()); ?></p>
+                                <a href="#">Modifier mot de Passe</a>
+                            </div>
+                        </div>
+                </section>
+                
+                <section id="secHistory" class="history">
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Vos commentaires</h3>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="secFav" class="favories">
+                    <div class="content">
+                        <div class="contentBx">
+                            <div class="titre">
+                                <h2>Vos Animes favories</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="secModify" class="modify">
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Modifier mes animes :</h3>
+                            
+                            <form action="./index.php?url=AddAnime" method="POST">
+                                <fieldset>
+                                    <div class="field">
+                                        <label for="cate-select">Categories ??</label>
+                                        <select name="categories" id="cate-select">
+                                            <option value="">--SVP choisisez une option--</option>
+                                            <option value="fantazy">fantazy</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="field">
+                                        <label for="name">Name:</label> <br>
+                                        <input type="text" id="name" name="name" value="" required>
+                                        
+                                    </div>
+                                    <div class="field">
+                                        <label for="description">Description:</label> <br>
+                                        <textarea id="description" name="description">
+                                            </textarea>
+                                        
+                                    </div>
+                                    <button>Ajouter un anime</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+        <p>projet final réaliser par eva debart pour la 3Wacademy pour la sessions de 2022</p>
+        </footer>
+        <script type="text/javascript" src="../public/js/script.js"></script>
+    </body>
+</html>

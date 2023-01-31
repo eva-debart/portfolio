@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ma blibliotheque d'anime</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../public/css/style.css">
+    
+    </head>
+    
+    <body>
+        <div class="container">
+        <header class="header">
+            <div class="main">
+                <p><img src="../public/assets/img/logo-2.svg" alt="logo" class="logo">Ma blibliotheque Anime</p>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="acceuil.html">accueil</a> </li>
+                        <li><a href="#">a propos</a></li>
+                        <li><a href="bibliotheque.html">Liste des Animes</a></li>
+                        <li><a href="login.html"class="current"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+           <div class='fond'>
+               <div class="form">
+                <h2>Enregistrez-vous</h2>
+                <form action="./index.php?url=registerSecurity" method="POST">
+                    <fieldset>
+                        <div class="field">
+                            <label for="name">Nickname</label> <br>
+                            <input type="text" id="name" name="name" value="" required>
+                            
+                        </div>
+                        
+                        <div class="field">
+                            <label for="email">Email</label> <br>
+                            <input type="email" id="email" name="email" value="" required>
+                            
+                        </div>
+                        
+                        <div class="field">
+                            <label for="password">Mot de passe</label> <br>
+                            <input type="password" id="name" name="password" value="" required>
+                            
+                        </div>
+                        <div class="field">
+                            <label for="birthday">date de naissance:</label> <br>
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                        
+                        <button>s'enregitrer</button>
+                        <br>
+                        <a href="login.html">deja membre? se login</a>
+                    </fieldset>
+                </form>
+               </div>
+           </div>
+                       
+        </main>
+        <footer>
+        <p>projet final réaliser par eva debart pour la 3Wacademy pour la sessions de 2022</p>
+        </footer>
+        <script type="text/javascript" src="../public/js/script.js"></script>
+    </body>
+</html>
