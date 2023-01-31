@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* main css*/
+h2{
+    color:#00748D;
+    text-align:center;
+}
+
+.fond{
+    background-image:url("../img/bg-header.jpg");
+    height:630px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.title{
+    padding:10px;
+    color:white;
+    background-color: #CB8606;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform:uppercase;
+    font-size:3rem;
+    text-align:center;
+
+    
+}
+.fond-text p{
+    background-color:white;
+    font-weight:bold;
+    color:#00748D;
+    padding:8px;
+    font-size:2rem;
+}    
+.prest{
+    display:flex;
+}
+.block-prest{
+    text-align:center;
+
+}
+
+.prest article{
+    padding:20px;
+}
+.prest i{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size:3rem;
+    background-color: #CB8606;
+    color:white;
+}
+
+.prestataire{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom:50px;
+}
+.prestataire img{
+    border:1px solid  #00748D;
+}
+
+
+
+
+@media screen and ( max-width: 1100px ) {
+    /*tablette*/
+
+    .prest{
+        flex-wrap:wrap;
+    }
+    .prest article{
+        width: 42%;
+        margin: 30px;
+        padding:0;
+    }
+    .prestataire{
+    flex-wrap:wrap;
+    padding-bottom:50px;
+    }
+    .prestataire img{
+    width:25%;
+    margin: 50px;
+    }
+    
+}
+
+
+@media screen and ( max-width: 780px ) {
+    /* mobile */
+    .prest article{
+        flex-wrap:nowrap;
+        width:auto;
+
+    }
+    .prestataire{
+        flex-wrap:nowrap;
+        flex-direction:column;
+        align-items:center
+    }
+    .pretataire img{
+       width:auto;
+    }
+   
+}
+
+@media screen and ( max-width: 630px ) {
+    /* petit mobile */
+    
+}

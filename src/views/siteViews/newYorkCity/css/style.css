@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Source+Sans+Pro&display=swap');
+
+@font-face{
+    font-family:'Courgette';
+    src: url("../font/Courgette-Regular.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+body{
+    max-width:980px;
+    margin-left: auto;
+	margin-right: auto;
+	font-family:'Source Sans Pro';
+	color:#444;
+	font-size:18px;
+}
+header{
+    text-align:center;
+}
+nav{
+    font-family:'Courgette';
+    color:#003884;
+}
+a{
+    text-decoration:none;
+    color:#003884;;
+}
+article {
+	text-align: justify;
+}
+h1{
+    font-family:'Courgette';
+    font-size:40px;
+    text-align:center;
+    color:#003884;
+    
+}
+h2{
+    font-family:'Courgette';
+    font-size:35px;
+    color:#4f89b9;
+    text-align:center;
+}
+h3{
+    font-family:'Courgette';
+    font-size:25px;
+    text-align:center;
+    color:#003884;
+}
+    
+blockquote,cite{
+    font-family:'Courgette';
+    font-size:25px;
+    text-align:center;
+    background-color:#d7e1ef;
+    color:#003884 ;
+}
+strong,em{
+    color:#003884;
+}
+footer{
+    text-align:center;
+}
+
+footer img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-left {
+	float: left;
+	margin-right: 1em;
+}
+
+.img-right {
+	float: right;
+	margin-left: 1em;
+}
+.clearfix::after {
+    content:"";
+    display: block;
+	clear: both;
+}
+.copyright{
+    font-size:14px;
+}

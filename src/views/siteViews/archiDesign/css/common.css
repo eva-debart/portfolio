@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+
+.container{
+    background-color: #f9f9f9;
+    color:#414141;
+    font-family: 'Nunito', sans-serif;
+    font-size:1.8rem;
+}
+header{
+    background-color:#00748D;
+    color:white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+nav ul{
+    display:flex;
+    justify-content:flex-end;
+	list-style: none;
+	padding:10px;
+}
+nav li{
+    margin:0 10px;
+}
+nav a{
+    text-decoration:none;
+	color:white;
+	font-size:2rem;
+	text-transform:uppercase;
+	padding:20px;
+	margin:0 10px;
+}
+
+nav a:hover {
+  color:#00748D;
+  background-color: white;
+}
+
+.current {
+    color:#00748D;
+    background-color: white;
+}
+
+
+main{
+    max-width:1500px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.main{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1500px;
+    display:flex;
+    justify-content:space-around;
+}
+
+footer {
+	padding: 1em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+}
+.footer{
+    background-color:#00748D;
+    color:white;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+.main-foot{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1500px;
+    display:flex;
+    justify-content:space-around;
+}
+.icone ul{
+    display:flex;
+    justify-content:flex-end;
+	list-style: none;
+	padding:10px;
+}
+.icone a{
+    text-decoration:none;
+	color:white;
+	font-size:2rem;
+	text-transform:uppercase;
+	padding:20px;
+}
+.icone  a:hover {
+    color: #CB8606;
+}
+.banner{
+   background-image:url("../img/path.png");
+   background-repeat:repeat-x;
+   background-position: bottom;
+}
+/*h1*/
+h1{
+    font-family: 'Fjalla One', sans-serif;
+}
+h3{
+    font-family: 'Fjalla One', sans-serif;
+    font-size:2rem;
+}
+h2{
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+/*autre*/
+.button{
+    background-color: #00748D;
+	padding:8px;
+	text-decoration:none;
+	color:white;
+	display:inline-block;
+}
+
+
+h2::before{
+    content:" - ";
+    color:#CB8606;
+}
+h3::before{
+    content:" - ";
+    color:#CB8606;
+}
+h2::after{
+    content: " - " ;
+    color:#CB8606;
+}
+h3::after{
+    content: " - " ;
+    color:#CB8606;
+}
+h1::before{
+    content:" - ";
+    color:#00748D;
+}
+h1::after{
+    content: " - " ;
+    color:#00748D;
+}
+
+
+@media screen and ( max-width: 1100px ) {
+    /*tablette*/
+    .main{
+        display:block;
+        text-align:center;
+    }
+     .main p{
+        padding-top:50px;
+        margin:0;
+    }
+    
+    nav ul{
+       justify-content:space-around;
+       padding:30px;
+       margin:0;
+    }
+    
+    
+    .main-foot{
+    justify-content: space-between;
+
+    }
+}
+
+
+@media screen and ( max-width: 780px ) {
+    /* mobile */
+    .main{
+        width:90%;
+    }
+    .main-foot{
+    justify-content: center;
+
+    }
+}
+
+@media screen and ( max-width: 630px ) {
+    /* petit mobile */
+    .main p{
+        margin:20px;
+    }
+    nav ul{
+       display:block;
+       padding:0;
+       margin:0;
+    }
+    nav a {
+        width:auto;
+        padding:0;
+        line-height:32px;
+    }
+    .main{
+        padding-bottom:90px;
+    }
+    .button{
+        padding: 8px 50px;
+    }
+    .main-foot{
+    flex-direction:column-reverse;
+
+    }
+    .main-foot p{
+        text-align:center;
+    }
+    .icone ul{
+        justify-content:center;
+    }
+}
